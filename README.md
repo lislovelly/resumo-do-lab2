@@ -10,19 +10,27 @@ A SLA (Service Level Agreement) define o tempo de atividade garantido por um ser
 O tempo de inatividade aceitável varia de acordo com o nível de SLA contratado. Aqui estão os principais níveis de SLA e seus respectivos tempos de inatividade:
 
 99% de SLA: Aproximadamente 7,31 horas de inatividade por mês.
+
 99,9% de SLA: Aproximadamente 43,8 minutos de inatividade por mês.
+
 99,95% de SLA: Aproximadamente 21,9 minutos de inatividade por mês.
+
 99,99% de SLA: Aproximadamente 4,38 minutos de inatividade por mês.
+
 99,999% de SLA: Aproximadamente 26,3 segundos de inatividade por mês.
-Criando uma Arquitetura com SLA
+
+## Criando uma Arquitetura com SLA
 Ao criar uma arquitetura na Azure, é essencial associar os recursos de forma a atender aos requisitos de disponibilidade desejados. Quanto mais "noves" na SLA (como 99,99% ou 99,999%), menor será o tempo de inatividade aceitável. Em contrapartida, SLAs com menos "noves" terão maior tempo de inatividade, o que pode impactar a continuidade dos serviços.
 
 ## Criando uma Máquina Virtual
 Na criação de uma VM na Azure, você pode escolher opções de disponibilidade que impactam a SLA:
 
 Conjuntos de Disponibilidade: Agrupam VMs para garantir que não todas estejam no mesmo rack físico, oferecendo maior resiliência a falhas de hardware.
+
 Zonas de Disponibilidade: Garantem que VMs estejam em diferentes datacenters dentro de uma mesma região, aumentando a tolerância a falhas.
+
 Regiões: Implantar VMs em diferentes regiões geográficas para máxima resiliência.
+
 Cada opção de disponibilidade tem um ícone informativo (i) com um resumo das informações e um link para a documentação detalhada, permitindo que os usuários aprendam mais sobre as implicações de cada escolha.
 
 ## Contas de Armazenamento e Estratégias de Replicação
